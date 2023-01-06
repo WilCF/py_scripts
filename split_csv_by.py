@@ -8,6 +8,8 @@ import os
 # Define the current folder, this is also where the CSV chunks shall be saved.
 dest_folder = os.path.dirname(os.path.realpath(__file__))
 
+print("Hey there! Let's Split this shiz!")
+
 # Prompt the user for the input and output filenames
 input_filename = input("Your CSV, Please: ")
 output_filename = input("Enter the base name for the output CSV files: ")
@@ -22,7 +24,7 @@ with open(input_filename, 'r') as source:
         headers = next(reader)
 
 # Define the file counter
-        file_idx = 0
+        file_idx = 1
         records_exist = True
 
 # Do the Splitting Work & Write to CSVs
